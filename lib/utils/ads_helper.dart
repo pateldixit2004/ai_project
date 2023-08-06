@@ -7,6 +7,7 @@ class AdHelper {
 
   BannerAd? bannerAd;
   InterstitialAd? interstitialAd;
+  NativeAd? nativeAd;
 
   void loadBannerAd() {
     bannerAd = BannerAd(
@@ -31,5 +32,12 @@ class AdHelper {
                 "=======================================================================================$error");
           },
         ));
+  }
+
+
+  void loadNativeAd()
+  {
+    nativeAd=NativeAd(adUnitId: 'ca-app-pub-3940256099942544/2247696110', listener: NativeAdListener(), request: AdRequest());
+    nativeAd!.load();
   }
 }

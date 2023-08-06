@@ -15,6 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
     AdHelper.adhelper.loadBannerAd();
     AdHelper.adhelper.loadInterstitialAd();
+    // AdHelper.adhelper.loadNativeAd();
   }
   @override
   Widget build(BuildContext context) {
@@ -34,6 +35,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 AdHelper.adhelper.loadInterstitialAd();
               }
           }, child: Text('Interstitial testing'),),
+          // Center(
+          //   child: Container(
+          //     height: 100,
+          //     alignment: Alignment.center,
+          //     child: AdWidget(ad: AdHelper.adhelper.nativeAd!),
+          //   ),
+          // ),
         ],
       ),
     ),);
