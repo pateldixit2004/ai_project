@@ -1,3 +1,5 @@
+import 'package:ai_project/screen/view/ai_home_screen.dart';
+import 'package:ai_project/screen/view/ai_web_view.dart';
 import 'package:ai_project/screen/view/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -10,7 +12,9 @@ void main()
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/':(context) =>  HomeScreen(),
+        // '/':(context) =>  HomeScreen(),
+        '/':(context) =>  AiHomeScreen(),
+        '/web':(context) =>  AiWebViewScreen(),
       },
     )
   );
