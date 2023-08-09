@@ -1,6 +1,6 @@
 class AiModel
 {
-  String? name,photo;
+  String? name,photo,con,link;
 
-  AiModel({this.name, this.photo});
+  AiModel({this.name, this.photo,this.con,this.link});
 }

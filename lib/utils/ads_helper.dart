@@ -34,10 +34,17 @@ class AdHelper {
         ));
   }
 
+  void loadNativeAd() {
+    nativeAd = NativeAd(
+        adUnitId: 'ca-app-pub-3940256099942544/2247696110',
+        factoryId: 'listTile',
+        listener: NativeAdListener(
+          onAdFailedToLoad:(ad, error) {
+            ad.dispose();
+          },
 
-  void loadNativeAd()
-  {
-    nativeAd=NativeAd(adUnitId: 'ca-app-pub-3940256099942544/2247696110', listener: NativeAdListener(), request: AdRequest());
+        ),
+        request: AdRequest());
     nativeAd!.load();
   }
 }
