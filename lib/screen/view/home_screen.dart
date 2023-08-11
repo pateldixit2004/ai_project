@@ -1,5 +1,8 @@
+import 'package:ai_project/screen/controller/controller.dart';
 import 'package:ai_project/utils/ads_helper.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -10,6 +13,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  Adcontroller controller=Get.put(Adcontroller());
   @override
   void initState() {
     super.initState();
@@ -38,8 +42,9 @@ class _HomeScreenState extends State<HomeScreen> {
           ElevatedButton(onPressed: () {
             if(AdHelper.adhelper.nativeAd!=null)
               {
-                // AdHelper.adhelper.interstitialAd!.show();
+                // AdHelper.adhelper.nativeAd!.
                 AdHelper.adhelper.loadNativeAd();
+
               }
           }, child: Text('Native testing'),),
           // Center(

@@ -1,6 +1,7 @@
 // TODO: Implement ListTileNativeAdFactory class
 
-package com.codelab.flutter.admobinlineads.com.example.ai_project
+//package com.codelab.flutter.admobinlineads.com.example.ai_project
+package com.example.ai_project
 
 import android.content.Context
 import android.view.LayoutInflater

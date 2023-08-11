@@ -17,10 +17,10 @@ void main() {
         builder: (context, orientation, deviceType) => GetMaterialApp(
           debugShowCheckedModeBanner: false,
           routes: {
-            '/':(context) =>  HomeScreen(),
-            // '/': (context) => AiHomeScreen(),
-            // '/web': (context) => AiWebViewScreen(),
-            // '/serch': (context) => AiSerchScreen(),
+            // '/':(context) =>  HomeScreen(),
+            '/': (context) => AiHomeScreen(),
+            '/web': (context) => AiWebViewScreen(),
+            '/serch': (context) => AiSerchScreen(),
           },
         ),
       ),

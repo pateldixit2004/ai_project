@@ -1,9 +1,14 @@
+import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+
+import '../screen/controller/controller.dart';
 
 class AdHelper {
   static final adhelper = AdHelper._();
 
   AdHelper._();
+
+  Adcontroller controller=Get.put(Adcontroller());
 
   BannerAd? bannerAd;
   InterstitialAd? interstitialAd;
@@ -42,7 +47,10 @@ class AdHelper {
           onAdFailedToLoad:(ad, error) {
             ad.dispose();
           },
-
+          onAdLoaded:(ad) {
+            controller.isNativeAdLoaded.value=true;
+            nativeAd=ad as NativeAd?;
+          },
         ),
         request: AdRequest());
     nativeAd!.load();
