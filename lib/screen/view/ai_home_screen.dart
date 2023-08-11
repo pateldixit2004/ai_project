@@ -78,8 +78,8 @@ class _AiHomeScreenState extends State<AiHomeScreen> {
                     Get.toNamed('/web',arguments: controller.itemList[index].link);
                   },
                   child: Container(
-                    height: 100.h,
-                    width: 48.w,
+                    // height: 100.h,
+                    // width: 48.w,
                     margin: EdgeInsets.all(6.sp),
                     padding: EdgeInsets.all(10.sp),
                     decoration: BoxDecoration(

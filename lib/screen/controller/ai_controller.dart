@@ -18,6 +18,7 @@ class AiController extends GetxController
     AiModel(name: 'ChatGPT',photo:'assets/image/chat.png' ,con: 'ChatGPT is an AI chatbot that uses natural language',link: 'https://chat.openai.com/',),
     AiModel(name: 'Playground AI',photo:'assets/image/play.png' ,con: 'FreeAi image creator.Use it to create art',link: 'https://playgroundai.com/',),
     AiModel(name: 'Google Bard',photo:'assets/image/go.jpeg' ,con: 'Conversational Ai sercvice,powered by LaMDA',link: 'https://bard.google.com/',),
+    AiModel(name: 'Andi',photo:'assets/image/andi.png' ,con: 'Ai serch engine provides direct answers',link:'https://andisearch.com/' ,),
     AiModel(name: 'Fliki',photo:'assets/image/fliki.png' ,con: 'Create video from scripts using realistic in 2 min',link:'https://fliki.ai/',),
     AiModel(name: 'Leonardo.Ai',photo:'assets/image/L1.jpeg' ,con: 'Create video from scripts using realistic in 2 min',link: 'https://leonardo.ai/',),
     AiModel(name: 'Claude.ai',photo:'assets/image/Claude.png' ,con: 'Ai chatbot just like chatGpt',link: 'https://claude.ai/',),
@@ -27,6 +28,35 @@ class AiController extends GetxController
     AiModel(name: 'Codeium',photo:'assets/image/Codeium.jpeg' ,con: 'Al-Ponvod Code Toolkit So Code Smarter',link: 'https://codeium.com/', ),
     AiModel(name: 'Erase It',photo:'assets/image/erase.png' ,con: 'Remove unwanted objects from your photos in seconds',link: 'https://erase-it.cloudinary.com/',),
     AiModel(name: 'Riffusion',photo:'assets/image/riffusion.jpeg' ,con: 'Make music from text with steals, modifiers and genres',link: 'https://www.riffusion.com/',),
+    AiModel(name: 'Writesonic',photo:'assets/image/Writesonic.jpeg' ,con: 'Craete SEO-friendly content with Ai for bCoges,website.',link: 'https://writesonic.com/',),
+    AiModel(name: 'Looka',photo:'assets/image/Looka.png' ,con: 'Create custom logo maker Ai',link:'https://looka.com/' ,),
+    AiModel(name: 'Copy.ai',photo:'assets/image/Copy.png' ,con: 'Ai-powered copywriter for marketing started free',link:'https://www.copy.ai/' ,),
+    AiModel(name: 'Durable',photo:'assets/image/Durable.jpeg' ,con: 'Create a website automate marketing & finances in 30 sec',link:'https://durable.co/' ,),
+    AiModel(name: 'Piggy Magic',photo:'assets/image/magic.jpeg' ,con: 'Social story maker',link:'https://piggy.to/magic' ,),
+
+    // AiModel(name: 'Andi',photo:'assets/image/andi.png' ,con: 'Ai serch engine provides direct answers',link:'https://andisearch.com/' ,),
+    AiModel(name: 'GPTGO',photo:'assets/image/gptgo.jpeg' ,con: 'Chatgpt combined with Google search',link:'https://gptgo.ai/?hl=en' ,),
+    AiModel(name: 'Grammer Checker',photo:'assets/image/grammer.png' ,con: 'free grammer checker for essays and reserach',link:'https://quillbot.com/grammar-check' ,),
+    AiModel(name: 'Logo Maker',photo:'assets/image/namecheap.png' ,con: 'Ask questions,get free logo to download',link:'https://www.namecheap.com/logo-maker/' ,),
+
+    AiModel(name: 'Soundful',photo:'assets/image/Soundful.jpeg' ,con: 'Royalty-free music with a click of a button',link:'https://soundful.com/' ,),
+
+
+
+    AiModel(name: 'Cody',photo:'assets/image/Cody.jpeg' ,con: 'ChatGpt but trained on your business ',link:'https://meetcody.ai/' ,),
+    AiModel(name: 'Browse Ai',photo:'assets/image/browse.jpeg' ,con: 'Train a robot to extract& monitor data from website no coding',link:'https://www.browse.ai/?via=fhuatgs2' ,),
+
+    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    //
+    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    //
+    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    //
+    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
   ];
 //   List inkList=[
 //     'https://chat.openai.com/',
@@ -42,7 +72,6 @@ class AiController extends GetxController
 //     'https://erase-it.cloudinary.com/',
 //     'https://www.riffusion.com/',
 //   ];
-
 
 
   RxList<AiModel> list=<AiModel>[].obs;
