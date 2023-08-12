@@ -13,7 +13,9 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   MobileAds.instance.initialize();
   runApp(
-    Sizer(
+      DevicePreview(
+        enabled: !kReleaseMode,
+        builder: (context) => Sizer(
         builder: (context, orientation, deviceType) => GetMaterialApp(
           debugShowCheckedModeBanner: false,
           routes: {
@@ -24,6 +26,6 @@ void main() {
           },
         ),
       ),
-
+      )
   );
 }

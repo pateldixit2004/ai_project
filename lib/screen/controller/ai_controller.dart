@@ -46,17 +46,30 @@ class AiController extends GetxController
     AiModel(name: 'Cody',photo:'assets/image/Cody.jpeg' ,con: 'ChatGpt but trained on your business ',link:'https://meetcody.ai/' ,),
     AiModel(name: 'Browse Ai',photo:'assets/image/browse.jpeg' ,con: 'Train a robot to extract& monitor data from website no coding',link:'https://www.browse.ai/?via=fhuatgs2' ,),
 
-    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
-    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    AiModel(name: 'Humata ai',photo:'assets/image/humata.png' ,con: 'ChatGpt For your files',link:'https://www.humata.ai/' ,),
+    AiModel(name: 'REimagine',photo:'assets/image/REimagine.png' ,con: 'Redesign any room in seconds using Ai',link:'https://www.reimaginehome.ai/' ,),
     //
-    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
-    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    AiModel(name: 'Boomy',photo:'assets/image/Boomy.png' ,con: 'Craate music& get paid for every listen on 40+platform',link:'https://boomy.com/' ,),
+    AiModel(name: 'Dream Interpreter',photo:'assets/image/Dream.jpeg' ,con: 'Dream interpreter using GPT-3',link:'https://dreaminterpreter.ai/' ,),
     //
-    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
-    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
-    //
-    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
-    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    AiModel(name: 'NightCafe Studio',photo:'assets/image/NightCafe.jpeg' ,con: 'Explore creative possibilities',link:'https://creator.nightcafe.studio/' ,),
+    AiModel(name: 'Tutor Ai',photo:'assets/image/Tutor.png' ,con: 'Learing platform,enter topic,get learing option',link:'https://www.tutorai.me/' ,),
+
+    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+
+    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+
+    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+
+    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+
+    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+
   ];
 //   List inkList=[
 //     'https://chat.openai.com/',

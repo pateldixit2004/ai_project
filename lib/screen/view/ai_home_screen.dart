@@ -81,7 +81,7 @@ class _AiHomeScreenState extends State<AiHomeScreen> {
                     // height: 100.h,
                     // width: 48.w,
                     margin: EdgeInsets.all(6.sp),
-                    padding: EdgeInsets.all(10.sp),
+                    // padding: EdgeInsets.all(10.sp),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15.sp),
                       color: Colors.white,
