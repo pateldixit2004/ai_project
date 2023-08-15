@@ -39,14 +39,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 AdHelper.adhelper.loadInterstitialAd();
               }
           }, child: Text('Interstitial testing'),),
-          ElevatedButton(onPressed: () {
-            if(AdHelper.adhelper.nativeAd!=null)
-              {
-                // AdHelper.adhelper.nativeAd!.
-                AdHelper.adhelper.loadNativeAd();
-
-              }
-          }, child: Text('Native testing'),),
+          // ElevatedButton(onPressed: () {
+          //   if(AdHelper.adhelper.nativeAd!=null)
+          //     {
+          //       // AdHelper.adhelper.nativeAd!.
+          //       AdHelper.adhelper.loadNativeAd();
+          //
+          //     }
+          // }, child: Text('Native testing'),),
           // Center(
           //   child: Container(
           //     height: 100,
@@ -54,7 +54,14 @@ class _HomeScreenState extends State<HomeScreen> {
           //     child: AdWidget(ad: AdHelper.adhelper.nativeAd!),
           //   ),
           // ),
+
+          SizedBox(
+            height: 100,
+            width: 400,
+            child: AdWidget(ad: AdHelper.adhelper!.nativeAd!),
+          )
         ],
+
       ),
     ),);
   }

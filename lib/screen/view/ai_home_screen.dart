@@ -27,6 +27,7 @@ class _AiHomeScreenState extends State<AiHomeScreen> {
     super.initState();
     _checkInternetConnection();
     AdHelper.adhelper.loadBannerAd();
+    AdHelper.adhelper.loadInterstitialAd();
     // print("======================================================================$_isConnected");
 
 
@@ -64,6 +65,11 @@ class _AiHomeScreenState extends State<AiHomeScreen> {
         actions: [
           IconButton(onPressed: () {
             Get.toNamed('/serch');
+            if(AdHelper.adhelper.interstitialAd!=null)
+            {
+              AdHelper.adhelper.interstitialAd!.show();
+              AdHelper.adhelper.loadInterstitialAd();
+            }
           }, icon: Icon(Icons.search_rounded),)
         ],
       ),
@@ -107,7 +113,12 @@ class _AiHomeScreenState extends State<AiHomeScreen> {
                           padding: const EdgeInsets.all(8.0),
                           child: Center(child: Text("${controller.itemList[index].con}",style: TextStyle(color: Colors.black),)),
                         ),
-
+                    // Center(
+                    //   child: Container(
+                    //     height: 40,
+                    //     width: 100,
+                    //     child: AdWidget(ad: AdHelper.adhelper.bannerAd!),
+                    //   ),)
                       ],
                     ),
                   )

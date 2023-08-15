@@ -33,7 +33,7 @@ class _AiWebViewScreenState extends State<AiWebViewScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(),
+
         body: Column(
           children: [
             // CircularProgressIndicator(

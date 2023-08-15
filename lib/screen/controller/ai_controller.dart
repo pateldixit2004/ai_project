@@ -41,8 +41,6 @@ class AiController extends GetxController
 
     AiModel(name: 'Soundful',photo:'assets/image/Soundful.jpeg' ,con: 'Royalty-free music with a click of a button',link:'https://soundful.com/' ,),
 
-
-
     AiModel(name: 'Cody',photo:'assets/image/Cody.jpeg' ,con: 'ChatGpt but trained on your business ',link:'https://meetcody.ai/' ,),
     AiModel(name: 'Browse Ai',photo:'assets/image/browse.jpeg' ,con: 'Train a robot to extract& monitor data from website no coding',link:'https://www.browse.ai/?via=fhuatgs2' ,),
 
@@ -55,20 +53,20 @@ class AiController extends GetxController
     AiModel(name: 'NightCafe Studio',photo:'assets/image/NightCafe.jpeg' ,con: 'Explore creative possibilities',link:'https://creator.nightcafe.studio/' ,),
     AiModel(name: 'Tutor Ai',photo:'assets/image/Tutor.png' ,con: 'Learing platform,enter topic,get learing option',link:'https://www.tutorai.me/' ,),
 
-    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
-    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    AiModel(name: 'Dalle-2',photo:'assets/image/Dalle-2.jpeg' ,con: 'Create realistic image from textand styles',link:'https://openai.com/dall-e-2' ,),
+    AiModel(name: 'ChatGpt Writer',photo:'assets/image/writer.png' ,con: 'GEnerate email/replies based on keywords',link:'https://chatgptui.org/' ,),
 
-    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
-    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    AiModel(name: 'Magic Studio',photo:'assets/image/ma.jpeg' ,con: 'Create stunning visuals in seconds',link:'https://magicstudio.com/' ,),
+    AiModel(name: 'Talk To Books',photo:'assets/image/books.jpeg' ,con: 'Expore books with Ai',link:'https://books.google.com/talktobooks/' ,),
 
-    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
-    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    AiModel(name: 'Fy! Studio',photo:'assets/image/fy.png' ,con: 'Create unique wall art from ypur ideas!',link:'https://www.iamfy.co/studio' ,),
+    AiModel(name: 'AutoDraw',photo:'assets/image/AutoDraw.png' ,con: 'Ai-powered drawing tool to help you draw faster',link:'https://www.autodraw.com/' ,),
 
-    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
-    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
-
-    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
-    AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    AiModel(name: 'Validator Ai',photo:'assets/image/valider.jpeg' ,con: 'Get feedback to validate & imporve statup odeas',link:'https://validatorai.com/' ,),
+    AiModel(name: 'Stable Diffusion',photo:'assets/image/stable.jpeg' ,con: 'Deep learing text to image model',link:'https://stablediffusionweb.com/' ,),
+    //
+    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
+    // AiModel(name: '',photo:'assets/image/.jpeg' ,con: '',link:'' ,),
 
   ];
 //   List inkList=[
