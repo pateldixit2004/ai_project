@@ -62,14 +62,15 @@ class _AiHomeScreenState extends State<AiHomeScreen> {
     return SafeArea(child: Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.teal.shade300,
+        title: Text("AI OmniSuite",style: TextStyle(fontWeight: FontWeight.normal),),
         actions: [
           IconButton(onPressed: () {
             Get.toNamed('/serch');
-            if(AdHelper.adhelper.interstitialAd!=null)
-            {
-              AdHelper.adhelper.interstitialAd!.show();
-              AdHelper.adhelper.loadInterstitialAd();
-            }
+            // if(AdHelper.adhelper.interstitialAd!=null)
+            // {
+            //   AdHelper.adhelper.interstitialAd!.show();
+            //   AdHelper.adhelper.loadInterstitialAd();
+            // }
           }, icon: Icon(Icons.search_rounded),)
         ],
       ),
@@ -104,7 +105,7 @@ class _AiHomeScreenState extends State<AiHomeScreen> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         SizedBox(height: 5,),
-                        Container(height: 5.h,width:10.w,decoration: BoxDecoration(
+                        Container(height: 6.h,width:15.w,decoration: BoxDecoration(
                           image: DecorationImage(image: AssetImage("${controller.itemList[index].photo}"),fit: BoxFit.fill)
                         ),),
                         SizedBox(height: 2.h,),
@@ -126,12 +127,12 @@ class _AiHomeScreenState extends State<AiHomeScreen> {
               },itemCount: controller.itemList.length,scrollDirection: Axis.vertical,),
             ),
           ),
-          Center(
-            child: Container(
-              height: 100,
-              child: AdWidget(ad: AdHelper.adhelper.bannerAd!),
-            ),
-          ),
+          // Center(
+          //   child: Container(
+          //     height: 100,
+          //     child: AdWidget(ad: AdHelper.adhelper.bannerAd!),
+          //   ),
+          // ),
         ],
       ),
     ),);

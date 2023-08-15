@@ -32,7 +32,7 @@ class AiController extends GetxController
     AiModel(name: 'Looka',photo:'assets/image/Looka.png' ,con: 'Create custom logo maker Ai',link:'https://looka.com/' ,),
     AiModel(name: 'Copy.ai',photo:'assets/image/Copy.png' ,con: 'Ai-powered copywriter for marketing started free',link:'https://www.copy.ai/' ,),
     AiModel(name: 'Durable',photo:'assets/image/Durable.jpeg' ,con: 'Create a website automate marketing & finances in 30 sec',link:'https://durable.co/' ,),
-    AiModel(name: 'Piggy Magic',photo:'assets/image/magic.jpeg' ,con: 'Social story maker',link:'https://piggy.to/magic' ,),
+    AiModel(name: 'Piggy Magic',photo:'assets/image/Piggy.jpeg' ,con: 'Social story maker',link:'https://piggy.to/magic' ,),
 
     // AiModel(name: 'Andi',photo:'assets/image/andi.png' ,con: 'Ai serch engine provides direct answers',link:'https://andisearch.com/' ,),
     AiModel(name: 'GPTGO',photo:'assets/image/gptgo.jpeg' ,con: 'Chatgpt combined with Google search',link:'https://gptgo.ai/?hl=en' ,),

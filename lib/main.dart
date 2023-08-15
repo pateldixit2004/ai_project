@@ -13,19 +13,18 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   MobileAds.instance.initialize();
   runApp(
-      DevicePreview(
-        enabled: !kReleaseMode,
-        builder: (context) => Sizer(
+    DevicePreview(
+      enabled: !kReleaseMode,
+      builder: (context) => Sizer(
         builder: (context, orientation, deviceType) => GetMaterialApp(
           debugShowCheckedModeBanner: false,
           routes: {
-            // '/':(context) =>  HomeScreen(),
             '/': (context) => AiHomeScreen(),
             '/web': (context) => AiWebViewScreen(),
             '/serch': (context) => AiSerchScreen(),
           },
         ),
       ),
-      )
+    ),
   );
 }
