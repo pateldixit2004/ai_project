@@ -70,7 +70,7 @@ class _AiSerchScreenState extends State<AiSerchScreen> {
             // ),
              Expanded(
                 child: Obx(
-                  () => GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisExtent: 30.h),itemBuilder: (context, index) {
+                  () => GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisExtent: 28.h),itemBuilder: (context, index) {
                     return InkWell(
                         onTap:() {
                           // Get.toNamed('/web' ,arguments: controller.inkList);
@@ -97,7 +97,7 @@ class _AiSerchScreenState extends State<AiSerchScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              SizedBox(height: 5,),
+                              SizedBox(height: 10,),
                               Container(height: 5.h,width:10.w,decoration: BoxDecoration(
                                   image: DecorationImage(image: AssetImage("${controller.list[index].photo}"),fit: BoxFit.fill)
                               ),),
@@ -105,7 +105,7 @@ class _AiSerchScreenState extends State<AiSerchScreen> {
                               Text("${controller.list[index].name}",style: TextStyle(color: Colors.black,fontSize: 20),),
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
-                                child: Center(child: Text("${controller.list[index].con}",style: TextStyle(color: Colors.black),)),
+                                child: Center(child: Text("${controller.list[index].con}",style: TextStyle(color: Colors.black),overflow: TextOverflow.ellipsis,maxLines: 2)),
                               ),
                             ],
                           ),

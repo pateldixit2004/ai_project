@@ -79,7 +79,8 @@ class _AiHomeScreenState extends State<AiHomeScreen> {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisExtent: 30.h,),itemBuilder: (context, index) {
+              child: GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisExtent: 28.h,),itemBuilder: (context, index) {
                 return InkWell(
                   onTap:() {
                     Get.toNamed('/web',arguments: controller.itemList[index].link);
@@ -102,17 +103,19 @@ class _AiHomeScreenState extends State<AiHomeScreen> {
                       ]
                     ),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        SizedBox(height: 5,),
-                        Container(height: 6.h,width:15.w,decoration: BoxDecoration(
+                        SizedBox(height: 10,),
+                        Container(height: 7.h,width:7.h,decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
                           image: DecorationImage(image: AssetImage("${controller.itemList[index].photo}"),fit: BoxFit.fill)
                         ),),
                         SizedBox(height: 2.h,),
                         Text("${controller.itemList[index].name}",style: TextStyle(color: Colors.black,fontSize: 20),),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Center(child: Text("${controller.itemList[index].con}",style: TextStyle(color: Colors.black),)),
+                          child: Center(child: Text("${controller.itemList[index].con}",style: TextStyle(color: Colors.black,),overflow: TextOverflow.ellipsis,maxLines: 2,)),
                         ),
                     // Center(
                     //   child: Container(
