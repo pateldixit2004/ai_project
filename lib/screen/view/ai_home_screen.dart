@@ -28,6 +28,8 @@ class _AiHomeScreenState extends State<AiHomeScreen> {
     _checkInternetConnection();
     AdHelper.adhelper.loadBannerAd();
     AdHelper.adhelper.loadInterstitialAd();
+    AdHelper.adhelper.loadrewaredAd();
+
     // print("======================================================================$_isConnected");
 
 
@@ -61,7 +63,8 @@ class _AiHomeScreenState extends State<AiHomeScreen> {
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.teal.shade300,
+        // backgroundColor: Colors.teal.shade300,
+        backgroundColor: Color(0xffd78e44),
         title: Text("AI OmniSuite",style: TextStyle(fontWeight: FontWeight.normal),),
         actions: [
           IconButton(onPressed: () {
@@ -84,12 +87,16 @@ class _AiHomeScreenState extends State<AiHomeScreen> {
                 return InkWell(
                   onTap:() {
                     Get.toNamed('/web',arguments: controller.itemList[index].link);
+                    // if(AdHelper.adhelper.rewardedAd!=null)
+                    // {
+                    //   AdHelper.adhelper.rewardedAd!.show(onUserEarnedReward: (ad, reward) {},);
+                    //   AdHelper.adhelper.loadrewaredAd();
+                    // }
                   },
                   child: Container(
                     // height: 100.h,
                     // width: 48.w,
                     margin: EdgeInsets.all(6.sp),
-                    // padding: EdgeInsets.all(10.sp),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15.sp),
                       color: Colors.white,
@@ -117,12 +124,14 @@ class _AiHomeScreenState extends State<AiHomeScreen> {
                           padding: const EdgeInsets.all(8.0),
                           child: Center(child: Text("${controller.itemList[index].con}",style: TextStyle(color: Colors.black,),overflow: TextOverflow.ellipsis,maxLines: 2,)),
                         ),
-                    // Center(
-                    //   child: Container(
-                    //     height: 40,
-                    //     width: 100,
-                    //     child: AdWidget(ad: AdHelper.adhelper.bannerAd!),
-                    //   ),)
+
+                        // index%7==0?Container(
+                        //   height: 40,
+                        //   width: 100,
+                        //   child: Center(
+                        //     child: AdWidget(ad: AdHelper.adhelper.bannerAd!),
+                        //   ),
+                        // ):SizedBox(),
                       ],
                     ),
                   )

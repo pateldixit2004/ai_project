@@ -43,31 +43,14 @@ class _AiSerchScreenState extends State<AiSerchScreen> {
             ),
           ),
         ),
-        backgroundColor: Colors.teal.shade300,
+        // backgroundColor: Colors.teal.shade300,
+        backgroundColor: Color(0xffe5ac73),
+
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            // Container(
-            //   decoration: BoxDecoration(
-            //     borderRadius: BorderRadius.circular(10.sp),
-            //   ),
-            //   child: TextField(
-            //     onChanged: (value) {
-            //       print('===========================$value');
-            //       controller.serchProduct(value);
-            //     },
-            //     decoration: InputDecoration(border: OutlineInputBorder(
-            //       borderRadius: BorderRadius.circular(10.sp),
-            //     ),
-            //       focusedBorder: OutlineInputBorder(
-            //         borderRadius: BorderRadius.circular(10.sp),
-            //         borderSide: BorderSide(color: Colors.grey)
-            //       )
-            //     ),
-            //   ),
-            // ),
              Expanded(
                 child: Obx(
                   () => GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisExtent: 28.h),itemBuilder: (context, index) {
@@ -86,7 +69,6 @@ class _AiSerchScreenState extends State<AiSerchScreen> {
                               borderRadius: BorderRadius.circular(15.sp),
                               color: Colors.white,
                               boxShadow: [
-                                // BoxShadow(blurRadius: 10.sp,color: Colors.white,blurStyle: BlurStyle.outer)
                                 BoxShadow(
                                     blurRadius: 2,
                                     color: Colors.grey,

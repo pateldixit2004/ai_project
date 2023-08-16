@@ -34,37 +34,27 @@ class _AiWebViewScreenState extends State<AiWebViewScreen> {
     return SafeArea(
       child: Scaffold(
 
-        body: Column(
-          children: [
-            // CircularProgressIndicator(
-            //   value: controller.p1.value,
-            //   backgroundColor: Colors.pink,
-            // ),
-            Expanded(
-              child: InAppWebView(
-                initialUrlRequest: URLRequest(
-                  url: Uri.parse('$link'),
-                ),
-                onLoadStart: (controller, url) {
-                  webViewController=controller;
-                  pullToRefreshController!.endRefreshing();
+        body: InAppWebView(
+          initialUrlRequest: URLRequest(
+            url: Uri.parse('$link'),
+          ),
+          onLoadStart: (controller, url) {
+            webViewController=controller;
+            pullToRefreshController!.endRefreshing();
 
-                },
-                onLoadStop: (controller, url) {
-                  webViewController=controller;
-                  pullToRefreshController!.endRefreshing();
+          },
+          onLoadStop: (controller, url) {
+            webViewController=controller;
+            pullToRefreshController!.endRefreshing();
 
-                },
-                onProgressChanged: (con, progress) {
-                  webViewController=con;
-                  pullToRefreshController!.endRefreshing();
-                  
-                  controller.changeProg(progress/100);
+          },
+          onProgressChanged: (con, progress) {
+            webViewController=con;
+            pullToRefreshController!.endRefreshing();
 
-                },
-              ),
-            ),
-          ],
+            controller.changeProg(progress/100);
+
+          },
         ),
       ),
     );

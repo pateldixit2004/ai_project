@@ -53,8 +53,8 @@ class AiController extends GetxController
     AiModel(name: 'NightCafe Studio',photo:'assets/image/NightCafe.jpeg' ,con: 'Explore creative possibilities',link:'https://creator.nightcafe.studio/' ,),
     AiModel(name: 'Tutor Ai',photo:'assets/image/Tutor.png' ,con: 'Learing platform,enter topic,get learing option',link:'https://www.tutorai.me/' ,),
 
-    AiModel(name: 'Dalle-2',photo:'assets/image/Dalle-2.jpeg' ,con: 'Create realistic image from textand styles',link:'https://openai.com/dall-e-2' ,),
-    AiModel(name: 'ChatGpt Writer',photo:'assets/image/writer.png' ,con: 'GEnerate email/replies based on keywords',link:'https://chatgptui.org/' ,),
+    AiModel(name: 'Dalle-2',photo:'assets/image/Dalle.jpeg' ,con: 'Create realistic image from textand styles',link:'https://openai.com/dall-e-2' ,),
+    AiModel(name: 'ChatGpt Writer',photo:'assets/image/ChatGpt1.png' ,con: 'GEnerate email/replies based on keywords',link:'https://chatgptui.org/' ,),
 
     AiModel(name: 'Magic Studio',photo:'assets/image/ma.jpeg' ,con: 'Create stunning visuals in seconds',link:'https://magicstudio.com/' ,),
     AiModel(name: 'Talk To Books',photo:'assets/image/books.jpeg' ,con: 'Expore books with Ai',link:'https://books.google.com/talktobooks/' ,),

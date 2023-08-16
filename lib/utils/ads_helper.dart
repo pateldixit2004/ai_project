@@ -13,6 +13,7 @@ class AdHelper {
   BannerAd? bannerAd;
   InterstitialAd? interstitialAd;
   NativeAd? nativeAd;
+  RewardedAd? rewardedAd;
 
   void loadBannerAd() {
     bannerAd = BannerAd(
@@ -54,5 +55,33 @@ class AdHelper {
         ),
         request: AdRequest());
     nativeAd!.load();
+  }
+
+
+  void loadrewaredAd() {
+    RewardedAd.load(
+      adUnitId: "ca-app-pub-3940256099942544/5224354917",
+      request: AdRequest(),
+      rewardedAdLoadCallback: RewardedAdLoadCallback(
+        onAdLoaded: (ad) {
+          ad.fullScreenContentCallback = FullScreenContentCallback(
+
+            onAdFailedToShowFullScreenContent: (ad, error) {
+              ad.dispose();
+            },
+
+            onAdDismissedFullScreenContent: (ad) {
+              ad.dispose();
+            },
+          );
+          rewardedAd = ad;
+          print("data got...........reward.......");
+        },
+
+        onAdFailedToLoad: (error) {
+          print('@@@@@@@@@@@    RewardAd failed to load: $error');
+        },
+      ),
+    );
   }
 }

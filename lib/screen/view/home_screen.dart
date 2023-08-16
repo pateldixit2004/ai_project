@@ -20,6 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
     AdHelper.adhelper.loadBannerAd();
     AdHelper.adhelper.loadInterstitialAd();
     AdHelper.adhelper.loadNativeAd();
+    AdHelper.adhelper.loadrewaredAd();
   }
   @override
   Widget build(BuildContext context) {
@@ -39,6 +40,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 AdHelper.adhelper.loadInterstitialAd();
               }
           }, child: Text('Interstitial testing'),),
+          ElevatedButton(onPressed: () {
+            if(AdHelper.adhelper.rewardedAd!=null)
+              {
+                AdHelper.adhelper.rewardedAd!.show(onUserEarnedReward: (ad, reward) {},);
+                AdHelper.adhelper.loadrewaredAd();
+              }
+          }, child: Text('Rewared testing'),),
           // ElevatedButton(onPressed: () {
           //   if(AdHelper.adhelper.nativeAd!=null)
           //     {

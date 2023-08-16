@@ -1,5 +1,6 @@
 import 'package:ai_project/screen/view/ai_home_screen.dart';
 import 'package:ai_project/screen/view/ai_serch_screen.dart';
+import 'package:ai_project/screen/view/ai_sleph_screen.dart';
 import 'package:ai_project/screen/view/ai_web_view.dart';
 import 'package:ai_project/screen/view/home_screen.dart';
 import 'package:device_preview/device_preview.dart';
@@ -15,16 +16,20 @@ void main() {
   runApp(
     DevicePreview(
       enabled: !kReleaseMode,
-      builder: (context) => Sizer(
+      builder: (context) =>
+          Sizer(
         builder: (context, orientation, deviceType) => GetMaterialApp(
           debugShowCheckedModeBanner: false,
           routes: {
-            '/': (context) => AiHomeScreen(),
+            // '/': (context) => HomeScreen(),
+            '/': (context) => AiScreen(),
+            '/home': (context) => AiHomeScreen(),
             '/web': (context) => AiWebViewScreen(),
             '/serch': (context) => AiSerchScreen(),
           },
         ),
       ),
-    ),
+    )
+
   );
 }
